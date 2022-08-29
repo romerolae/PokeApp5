@@ -34,7 +34,13 @@ const Home = () => {
 					<button>Catch them all</button>
 				</form>
 			</div>
-			<div className="home__footer"></div>
+			<div className="circle__ext">
+				<div className="circle__int"></div>
+			</div>
+			<div className="home__footer">
+				<div className="home__red"></div>
+				<div className="home__black"></div>
+			</div>
 		</div>
 	);
 };

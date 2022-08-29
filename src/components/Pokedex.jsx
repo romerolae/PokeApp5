@@ -20,10 +20,28 @@ const Pokedex = () => {
 			<div className="pokeImage">
 				<img src="/image 12.png" alt="" />
 			</div>
-
 			<div className="pokedex__baner">
 				<div className="pokedex__red"></div>
 				<div className="pokedex__black"></div>
+			</div>
+			<h2>Welcome, here you will find your favorite pokemon</h2>
+			<div className="form__main">
+				<div className="pokedex__form">
+					<form>
+						<input type="text" placeholder="Search a pokemon" />
+						<button>Search</button>
+					</form>
+				</div>
+				<div className="pokedex__form2">
+					<form id="">
+						<select name="" id="">
+							<option value="">
+								<button>All Pokemons</button>
+							</option>
+							<option value="">Fighter</option>
+						</select>
+					</form>
+				</div>
 			</div>
 			<div className="cards-container">
 				{pokemons?.results.map((pokemon) => (

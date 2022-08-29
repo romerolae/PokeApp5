@@ -9,14 +9,20 @@ ul {
 }
 
 .pokemonCard {
-	border: 1px solid aqua;
+	background-color: blanchedalmond;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 250px;
-	height: 300px;
+	width: 280px;
+	height: 320px;
 	gap: 20px;
+}
+
+.pokemonCard__bg {
+	background-color: aliceblue;
+	width: 260px;
+	height: 200px;
 }
 
 .poke__card {
@@ -24,7 +30,7 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 350px;
+	padding: 10px;
 }
 
 .poke__card img {
@@ -39,8 +45,14 @@ ul {
 	align-items: center;
 }
 
+.poke__body__item {
+	display: flex;
+	gap: 5px;
+}
+
 .card__footer {
 	display: grid;
+	margin-bottom: 15px;
 }
 
 /* ==========Media Querys========== */
@@ -48,7 +60,7 @@ ul {
 @media screen and (min-width: 768px) {
 	.pokemonCard {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 300px;
@@ -58,7 +70,7 @@ ul {
 
 	.poke__card {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
