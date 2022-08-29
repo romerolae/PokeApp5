@@ -24,6 +24,9 @@ const Pokedex = () => {
 				<div className="pokedex__red"></div>
 				<div className="pokedex__black"></div>
 			</div>
+			<div className="circle__ext1">
+				<div className="circle__int1"></div>
+			</div>
 			<h2>Welcome, here you will find your favorite pokemon</h2>
 			<div className="form__main">
 				<div className="pokedex__form">

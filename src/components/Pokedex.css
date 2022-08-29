@@ -5,7 +5,7 @@
 .pokeImage img {
 	position: absolute;
 	width: 230px;
-	left: 80px;
+	left: 40px;
 	top: 55px;
 }
 .pokedex__baner {
@@ -23,6 +23,28 @@
 	background-color: black;
 	max-width: 1440px;
 	height: 30px;
+}
+
+.circle__ext1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	aspect-ratio: 1;
+	background-color: white;
+	border-radius: 50%;
+	border: 5px solid black;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	z-index: 10;
+}
+
+.circle__int1 {
+	width: 25px;
+	aspect-ratio: 1;
+	background-color: black;
+	border-radius: 50%;
 }
 
 .pokedex h2 {
@@ -67,9 +89,37 @@
 
 	.pokeImage img {
 		position: absolute;
-		width: 300px;
-		left: 133px;
+		width: 330px;
+		left: 180px;
 		top: 47px;
+	}
+
+	.circle__ext1 {
+		right: 280px;
+		width: 55px;
+	}
+
+	.pokedex h2 {
+		margin: 20px;
+		font-size: 2rem;
+	}
+
+	.form__main {
+		gap: 20px;
+	}
+
+	.pokedex__form input {
+		width: 250px;
+		height: 30px;
+	}
+
+	.pokedex__form button {
+		height: 30px;
+	}
+
+	.pokedex__form2 select {
+		width: 250px;
+		height: 30px;
 	}
 
 	.cards-container {

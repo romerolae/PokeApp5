@@ -17,12 +17,14 @@ ul {
 	width: 280px;
 	height: 320px;
 	gap: 20px;
+	border-radius: 15px;
 }
 
 .pokemonCard__bg {
 	background-color: aliceblue;
 	width: 260px;
 	height: 200px;
+	border-radius: 10px;
 }
 
 .poke__card {
