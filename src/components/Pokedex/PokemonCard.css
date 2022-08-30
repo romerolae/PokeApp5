@@ -12,20 +12,31 @@ ul {
 	background-color: blanchedalmond;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
-	width: 280px;
-	height: 320px;
+	width: 261px;
+	height: 383px;
 	gap: 20px;
 	border-radius: 15px;
 	cursor: pointer;
+	position: relative;
 }
 
 .pokemonCard__bg {
 	background-color: aliceblue;
-	width: 260px;
-	height: 200px;
+	width: 245px;
+	height: 118px;
 	border-radius: 10px;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pokemonCard__img {
+	position: absolute;
+	top: 40px;
+	right: 75px;
+	width: 100px;
 }
 
 .poke__card {
@@ -34,10 +45,6 @@ ul {
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-}
-
-.poke__card img {
-	width: 100px;
 }
 
 .poke__body {
@@ -66,8 +73,8 @@ ul {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 300px;
-		height: 350px;
+		/* width: 300px;
+		height: 350px; */
 		gap: 20px;
 	}
 

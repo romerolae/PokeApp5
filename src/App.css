@@ -19,8 +19,8 @@ p {
 }
 
 .App {
-	font-family: 'Inter';
-	font-style: normal;
+	/* font-family: 'Inter';
+	font-style: normal; */
 }
 
 .page-home {
@@ -100,14 +100,16 @@ p {
 }
 
 .home__black {
-	background-color: black;
-	width: 1440px;
+	background-color: #0c0c0c;
+	width: 100%;
 	height: 30px;
 }
 
 .home__footer {
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
+	max-width: 100%;
+	width: 100%;
 }
 
 .circle__ext {
@@ -116,9 +118,9 @@ p {
 	justify-content: center;
 	width: 50px;
 	aspect-ratio: 1;
-	background-color: white;
+	background-color: #ffffff;
 	border-radius: 50%;
-	border: 5px solid black;
+	border: 7px solid #000000;
 	position: absolute;
 	bottom: 55px;
 	z-index: 10;
@@ -127,8 +129,9 @@ p {
 .circle__int {
 	width: 25px;
 	aspect-ratio: 1;
-	background-color: black;
+	background-color: #212121;
 	border-radius: 50%;
+	border: 7px solid #000000;
 }
 
 /* ==========Media Querys========== */
@@ -171,5 +174,14 @@ p {
 	.home__footer {
 		max-width: 100%;
 		width: 100%;
+	}
+
+	.circle__ext {
+		width: 70px;
+		bottom: 40px;
+	}
+
+	.circle__int {
+		width: 45px;
 	}
 }

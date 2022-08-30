@@ -3,14 +3,6 @@
 	height: 20px;
 }
 
-.form__main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-}
-
 /* ==========Media Querys========== */
 
 @media screen and (min-width: 768px) {
@@ -30,6 +22,7 @@
 	.pokedex__form2 select {
 		width: 250px;
 		height: 30px;
+		z-index: 100;
 	}
 
 	.form__main {

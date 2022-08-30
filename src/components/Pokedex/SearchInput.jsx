@@ -8,13 +8,11 @@ const SearchInput = ({ setPokeSearch }) => {
 	};
 
 	return (
-		<div className="form__main">
-			<div className="pokedex__form">
-				<form onSubmit={handleSubmit}>
-					<input type="text" id="searchText" placeholder="Search a pokemon" />
-					<button>Search</button>
-				</form>
-			</div>
+		<div className="pokedex__form">
+			<form onSubmit={handleSubmit}>
+				<input type="text" id="searchText" placeholder="Search a pokemon" />
+				<button>Search</button>
+			</form>
 		</div>
 	);
 };
