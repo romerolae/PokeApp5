@@ -6,3 +6,7 @@ export default configureStore({
 		nameTrainer,
 	},
 });
+
+//En reducer se guarda todo lo referente a los estados
+
+//Un estado global es un Slice

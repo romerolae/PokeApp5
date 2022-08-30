@@ -18,6 +18,7 @@ ul {
 	height: 320px;
 	gap: 20px;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 .pokemonCard__bg {

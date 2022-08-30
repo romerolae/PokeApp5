@@ -46,3 +46,9 @@ const Home = () => {
 };
 
 export default Home;
+
+//useDispatch nos sirve para usar una instancia (genero una instancia) para ejecutar una action
+
+//useNavigate
+
+//action.payload se encarga de guardar el dato

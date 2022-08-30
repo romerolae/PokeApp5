@@ -13,3 +13,9 @@ const ProtectedRoutes = () => {
 };
 
 export default ProtectedRoutes;
+
+//En store se guarda el estado en global
+//El index.js
+//useSelector(hook) nos sirve para acceder a la info de la store   debe retornar especificamente el estado que necesita
+
+//useNavigate
