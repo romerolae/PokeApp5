@@ -19,16 +19,14 @@ const SelectType = ({ setPokeType }) => {
 
 	return (
 		<div className="pokedex__form2">
-			<form id="">
-				<select onChange={handleChange}>
-					<option value="all">All Pokemons</option>
-					{listTypes?.map((type) => (
-						<option key={type.name} value={type.name}>
-							{type.name}
-						</option>
-					))}
-				</select>
-			</form>
+			<select onChange={handleChange}>
+				<option value="all">All Pokemons</option>
+				{listTypes?.map((type) => (
+					<option key={type.name} value={type.name}>
+						{type.name}
+					</option>
+				))}
+			</select>
 		</div>
 	);
 };
