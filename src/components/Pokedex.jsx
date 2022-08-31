@@ -5,6 +5,7 @@ import './Pokedex.css';
 import { useSelector } from 'react-redux';
 import SearchInput from './Pokedex/SearchInput';
 import SelectType from './Pokedex/SelectType';
+import Paginate from './Pokedex/Paginate';
 const Pokedex = () => {
 	const [pokemons, setPokemons] = useState();
 
@@ -35,6 +36,8 @@ const Pokedex = () => {
 
 	const nameTrainer = useSelector((state) => state.nameTrainer);
 
+	// console.log(pokemons);
+
 	return (
 		<div className="pokedex">
 			<div className="pokeImage">
@@ -58,6 +61,7 @@ const Pokedex = () => {
 					<PokemonCard key={pokemon.url} url={pokemon.url} />
 				))}
 			</div>
+			<Paginate />
 		</div>
 	);
 };
