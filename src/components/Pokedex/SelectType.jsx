@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const SelectType = ({ setPokeType }) => {
+const SelectType = ({ setPokeType, pokeType }) => {
 	const [listTypes, setListTypes] = useState();
 
 	useEffect(() => {
@@ -14,12 +14,12 @@ const SelectType = ({ setPokeType }) => {
 
 	const handleChange = (e) => {
 		e.preventDefault();
-		setPokeType(e.target(value));
+		setPokeType(e.target.value);
 	};
 
 	return (
 		<div className="pokedex__form2">
-			<select onChange={handleChange}>
+			<select value={pokeType} onChange={handleChange}>
 				<option value="all">All Pokemons</option>
 				{listTypes?.map((type) => (
 					<option key={type.name} value={type.name}>

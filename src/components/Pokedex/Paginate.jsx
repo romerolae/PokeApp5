@@ -7,7 +7,7 @@ const Paginate = () => {
 	const [characters, setCharacters] = useState([]);
 	const [loading, setloading] = useState(false);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [charactersPerPage, setCharactersPerPage] = useState(20);
+	const [charactersPerPage, setCharactersPerPage] = useState(5);
 
 	useEffect(() => {
 		const fetchCharacters = async () => {
