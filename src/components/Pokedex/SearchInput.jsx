@@ -6,6 +6,7 @@ const SearchInput = ({ setPokeSearch, setPokeType }) => {
 		e.preventDefault();
 		setPokeSearch(e.target.searchText.value.trim().toLowerCase());
 		setPokeType('All');
+		e.target.searchText.value = '';
 	};
 
 	return (

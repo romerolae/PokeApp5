@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const SelectType = ({ setPokeType, pokeType }) => {
+const SelectType = ({ setPokeType, pokeType, setPokeSearch }) => {
 	const [listTypes, setListTypes] = useState();
 
 	useEffect(() => {
-		const URL = 'http://pokeapi.co/api/v2/type';
+		const URL = 'https://pokeapi.co/api/v2/type';
 		axios
 			.get(URL)
 			.then((res) => setListTypes(res.data.results))
@@ -15,6 +15,7 @@ const SelectType = ({ setPokeType, pokeType }) => {
 	const handleChange = (e) => {
 		e.preventDefault();
 		setPokeType(e.target.value);
+		setPokeSearch('');
 	};
 
 	return (

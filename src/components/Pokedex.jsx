@@ -60,7 +60,11 @@ const Pokedex = () => {
 			<h2>Welcome {nameTrainer}, here you will find your favorite pokemon</h2>
 			<div className="form__main">
 				<SearchInput setPokeSearch={setPokeSearch} setPokeType={setPokeType} />
-				<SelectType setPokeType={setPokeType} pokeType={pokeType} />
+				<SelectType
+					setPokeType={setPokeType}
+					pokeType={pokeType}
+					setPokeSearch={setPokeSearch}
+				/>
 			</div>
 
 			<div className="cards-container">
