@@ -1,0 +1,26 @@
+.pagination-container {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.pagination__number__container {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	padding-left: 0;
+}
+
+.pagination__prev__next {
+	font-size: 30px;
+	color: black;
+	cursor: pointer;
+}
+
+.page__number {
+	font-size: 30px;
+	color: black;
+	cursor: pointer;
+}

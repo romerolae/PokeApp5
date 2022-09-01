@@ -7,9 +7,9 @@ const Characters = ({ characters, loading }) => {
 
 	return (
 		<ul className="list__group">
-			{characters.results?.map((character) => (
-				<li key={character.name} className="list__group__item">
-					{character.url}
+			{characters.map((character) => (
+				<li key={character.url} className="list__group__item">
+					{character.name}
 				</li>
 			))}
 		</ul>

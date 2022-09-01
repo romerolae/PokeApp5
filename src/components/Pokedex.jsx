@@ -43,8 +43,6 @@ const Pokedex = () => {
 
 	const nameTrainer = useSelector((state) => state.nameTrainer);
 
-	// console.log(pokemons);
-
 	return (
 		<div className="pokedex">
 			<div className="pokeImage">
@@ -66,13 +64,15 @@ const Pokedex = () => {
 					setPokeSearch={setPokeSearch}
 				/>
 			</div>
+			<div className="page-container">
+				<Paginate setPokeSearch={setPokeSearch} />
+			</div>
 
 			<div className="cards-container">
 				{pokemons?.results.map((pokemon) => (
 					<PokemonCard key={pokemon.url} url={pokemon.url} />
 				))}
 			</div>
-			{/* <Paginate /> */}
 		</div>
 	);
 };
