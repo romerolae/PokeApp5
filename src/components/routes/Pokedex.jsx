@@ -153,7 +153,11 @@ const Pokedex = () => {
 					<form className="pokedex__form">
 						<input
 							type="text"
-							onChange={(e) => setSearch(e.target.value)}
+							onChange={(e) =>
+								setSearch(e.target.value.trim().toLowerCase())(
+									(e.target.value = '')
+								)
+							}
 							value={search}
 							className="input-form"
 							placeholder="Pokemon Name"
