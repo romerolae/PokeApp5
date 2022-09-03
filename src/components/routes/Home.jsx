@@ -1,7 +1,14 @@
+// Actions:
+// 1. Crear la accion en el slice
+// 2. Exportar la accion
+// 3. Importarla en el componente donde la utilizaremos  <-
+// 4. Importar y ejecutar useDispatch <-
+// 5. despachamos la acción <-
+
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setNameTrainer } from '../store/slices/nameTrainer.slice';
+import { setNameTrainer } from '../../store/slices/nameTrainer.slice';
 
 const Home = () => {
 	const dispatch = useDispatch();

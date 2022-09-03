@@ -1,0 +1,6 @@
+.btn-actions {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px;
+}

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import StatPokemon from './StatPokemon';
-import './PokemonCard.css';
+import './styles/PokemonCard.css';
 import { useNavigate } from 'react-router-dom';
 
-const PokemonCard = ({ url }) => {
+const PokemonCard = ({ pokemonUrl }) => {
 	const [pokemon, setPokemon] = useState();
 
 	const navigate = useNavigate();
 
 	useEffect(() => {
 		axios
-			.get(url)
+			.get(pokemonUrl)
 			.then((res) => setPokemon(res.data))
 			.catch((err) => console.log(err));
 	}, []);
@@ -19,31 +19,42 @@ const PokemonCard = ({ url }) => {
 	const handleClick = () => navigate(`/pokedex/${pokemon.name}`);
 
 	return (
-		<div onClick={handleClick} className="pokemonCard">
-			<div className="pokemonCard__bg"></div>
-			<header>
+		<article
+			onClick={handleClick}
+			className={`card color-${pokemon?.types[0].type.name}`}
+		>
+			<header className={`card__header bg-${pokemon?.types[0].type.name}`}>
 				<img
-					className="pokemonCard__img"
+					className="card__avatar"
 					src={pokemon?.sprites.other['official-artwork']['front_default']}
 					alt=""
 				/>
 			</header>
-			<section className="poke__body">
-				<h3>{pokemon?.name}</h3>
-				<ul className="poke__body__item">
+			<section className="card__body">
+				<h3 className={`card__name color-text-${pokemon?.types[0].type.name}`}>
+					{pokemon?.name}
+				</h3>
+				<ul className="card__list-type">
 					{pokemon?.types.map((slot) => (
-						<li key={slot.type.url}> {slot.type.name} </li>
+						<li className="card__item-type" key={slot.type.url}>
+							{slot.type.name}
+						</li>
 					))}
 				</ul>
 			</section>
-			<div className="card__footer">
-				<ul className="card__prop">
+			<hr className="card__hr" />
+			<footer className="card__footer">
+				<ul className="card__list-stats">
 					{pokemon?.stats.map((stat) => (
-						<StatPokemon key={stat.stat.url} infoStat={stat} />
+						<StatPokemon
+							key={stat.stat.url}
+							infoStat={stat}
+							color={pokemon?.types[0].type.name}
+						/>
 					))}
 				</ul>
-			</div>
-		</div>
+			</footer>
+		</article>
 	);
 };
 

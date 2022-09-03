@@ -1,14 +1,14 @@
 import React from 'react';
-import './StatPokemon.css';
+import './styles/StatPokemon.css';
 
-const StatPokemon = ({ infoStat }) => {
+const StatPokemon = ({ infoStat, color }) => {
 	return (
-		<div className="stat__card">
-			<li className=" stat__item">
-				<h4>{infoStat.stat.name}</h4>
-				<p>{infoStat.base_stat}</p>
-			</li>
-		</div>
+		<li className="card__stat">
+			<h4 className="card__stat-title">{infoStat.stat.name}</h4>
+			<p className={`card__stat-value color-text-${color}`}>
+				{infoStat.base_stat}
+			</p>
+		</li>
 	);
 };
 

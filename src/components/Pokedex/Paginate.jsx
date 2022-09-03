@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Characters from './Characters';
-import Pagination from './Pagination';
+import Pagination from './PaginationAnother';
 
 const Paginate = ({ pokeSearch }) => {
 	const [characters, setCharacters] = useState();

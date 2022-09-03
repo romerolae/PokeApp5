@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import nameTrainer from './slices/nameTrainer.slice';
+import setNumItem from './slices/pagination.slice';
 
 export default configureStore({
 	reducer: {
 		nameTrainer,
+		setNumItem,
 	},
 });
 

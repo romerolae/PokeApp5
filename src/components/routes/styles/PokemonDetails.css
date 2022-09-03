@@ -1,0 +1,143 @@
+.details-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.row {
+	clear: both;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.pokemon-content-detail {
+	border-radius: 100px 100px 0 0;
+	background-color: white;
+}
+
+.img-pokemon {
+	transform: translateY(-50px);
+}
+
+.img-pokemon-info {
+	display: flex;
+	justify-content: space-around;
+	margin: -44px 0 20px 10px;
+}
+
+.pokemon-name {
+	padding: 10px;
+	background: #263238;
+	color: white;
+}
+
+.title {
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	/* border: solid 1px; */
+	margin: 0 0 15px;
+	background: #6092ee;
+	/* border-radius: 10px 10px 0 0; */
+	color: white;
+	text-shadow: 2px 1px 7px white;
+}
+
+.width-75 {
+	width: 75%;
+}
+.title-detail {
+	font-size: 1.2rem;
+	color: white;
+	padding: 10px;
+	margin: -10px;
+	border-radius: 10px 10px 0 0;
+}
+
+.card-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.card-stats {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.bar-progress {
+	background-color: lightgray;
+	height: 20px;
+	margin: 0px 10px 0px 10px;
+	color: white;
+	text-align: right;
+	padding: 0px 10px 0px 0;
+}
+
+.hp-stat {
+	width: 50%;
+	background-color: #ff4545;
+	height: 20px;
+	padding-right: 10px;
+}
+
+.attack-stat {
+	width: 50%;
+	background-color: #ffff47;
+	height: 20px;
+	padding-right: 10px;
+}
+
+.defense-stat {
+	width: 50%;
+	background-color: #47ff47;
+	height: 20px;
+	padding-right: 10px;
+}
+
+.speed-stat {
+	width: 50%;
+	background-color: #4747ff;
+	height: 20px;
+	padding-right: 10px;
+}
+
+.type-abilities {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	border-radius: 20px;
+}
+.width-25 {
+	width: 25%;
+}
+
+.card-Movies {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	font-size: 1.2rem;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 10px;
+}
