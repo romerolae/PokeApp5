@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './styles/PokemonDetails.css';
 
-const PokemonDetail = () => {
+const PokemonDetails = () => {
 	const colorType = {
 		normal: ['#dcdcca', '#cbcbaf', '#bab995', '#a8a77a', '#9d9c69'],
 		fire: ['#f8cdac', '#f5b482', '#f29b59', '#ee8130', '#ec7215 '],
@@ -30,7 +30,7 @@ const PokemonDetail = () => {
 	};
 
 	/* Parametros  */
-	const { name } = useParams();
+	const { id } = useParams();
 
 	/* Navigate  */
 	const navigateBack = useNavigate();
@@ -40,7 +40,7 @@ const PokemonDetail = () => {
 	const [detail, setDetail] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${name}/`).then((res) => {
+		axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then((res) => {
 			setDetail({
 				id: res.data.id,
 				name: res.data.name,
@@ -61,7 +61,7 @@ const PokemonDetail = () => {
 
 			console.log(res.data);
 		});
-	}, [name]);
+	}, [id]);
 	const typeName =
 		detail?.arrTypes !== undefined ? detail?.arrTypes[0].type.name : 'normal';
 
@@ -78,14 +78,7 @@ const PokemonDetail = () => {
 	document.body.style.backgroundColor = colorBg;
 
 	return (
-		<div className="details-container">
-			<div>
-				<button
-					className="button_back"
-					onClick={() => navigateBack(-1)}
-				></button>
-			</div>
-
+		<div className="content">
 			<div className="pokemon-content-detail">
 				<img className="img-pokemon" src={detail.imageBig} alt="" />
 				<div className="img-pokemon-info">
@@ -100,6 +93,12 @@ const PokemonDetail = () => {
 
 			<br />
 
+			<div>
+				<button
+					className="button_back"
+					onClick={() => navigateBack(-1)}
+				></button>
+			</div>
 			<div className="order-article">
 				<div className="width-75">
 					<div className="type-abilities">
@@ -214,7 +213,7 @@ const PokemonDetail = () => {
 							className="title-detail"
 							style={{ backgroundColor: `${colorBgTitle}` }}
 						>
-							Movies
+							Moves
 						</div>
 						{detail.arrMoves?.map((move) => (
 							<p>{move.move.name}</p>
@@ -226,4 +225,4 @@ const PokemonDetail = () => {
 	);
 };
 
-export default PokemonDetail;
+export default PokemonDetails;

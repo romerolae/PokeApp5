@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // Cambiamos mySlice por el nombre de nuestro slice (usersSlice, toDosSlice...)
 export const paginationSlice = createSlice({
 	name: 'setNumItem',
-	initialState: 4,
+	initialState: 8,
 	reducers: {
 		setNumberItem: (state, action) => {
 			// Recibimos la accion por parámetros

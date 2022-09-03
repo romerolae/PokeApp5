@@ -54,7 +54,7 @@ const Pokedex = () => {
 		// alert(page)
 		setOffSet(setNumItem * (page - 1));
 		setPageActual(page);
-		window.scrollTo(0, 0);
+		// window.scrollTo(0, 0);
 	};
 
 	/* Select Type - Filter for type */
