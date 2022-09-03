@@ -30,7 +30,7 @@ const PokemonDetails = () => {
 	};
 
 	/* Parametros  */
-	const { id } = useParams();
+	const { name } = useParams();
 
 	/* Navigate  */
 	const navigateBack = useNavigate();
@@ -40,7 +40,7 @@ const PokemonDetails = () => {
 	const [detail, setDetail] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then((res) => {
+		axios.get(`https://pokeapi.co/api/v2/pokemon/${name}/`).then((res) => {
 			setDetail({
 				id: res.data.id,
 				name: res.data.name,
@@ -61,7 +61,7 @@ const PokemonDetails = () => {
 
 			console.log(res.data);
 		});
-	}, [id]);
+	}, [name]);
 	const typeName =
 		detail?.arrTypes !== undefined ? detail?.arrTypes[0].type.name : 'normal';
 

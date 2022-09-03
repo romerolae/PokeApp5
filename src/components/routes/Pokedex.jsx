@@ -150,13 +150,13 @@ const Pokedex = () => {
 					pokemon
 				</h2>
 				<div className="form__main">
-					<div className="pokedex__form">
+					<form className="pokedex__form">
 						<input
 							type="text"
 							onChange={(e) => setSearch(e.target.value)}
 							value={search}
 							className="input-form"
-							placeholder="Name Pokemon"
+							placeholder="Pokemon Name"
 						/>
 						<button
 							className="btn-form"
@@ -164,7 +164,7 @@ const Pokedex = () => {
 						>
 							Search
 						</button>
-					</div>
+					</form>
 					<div className="pokedex__form2">
 						<select
 							name="type"
