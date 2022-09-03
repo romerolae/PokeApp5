@@ -173,7 +173,7 @@ const Pokedex = () => {
 						<select
 							name="type"
 							id="type"
-							onClick={fomrSelectType}
+							onChange={fomrSelectType}
 							className={'select-type'}
 						>
 							<option value="">All pokemons</option>
