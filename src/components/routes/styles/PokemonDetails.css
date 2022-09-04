@@ -11,7 +11,7 @@
 	margin: 10px 0 10px 30px;
 	display: flex;
 
-	background-image: url(../../../../public/back_flecha.gif);
+	background-image: url(/back_flecha.gif);
 	background-size: contain;
 	border: none;
 	height: 27px;
@@ -25,11 +25,18 @@
 	background-color: white;
 }
 
+.conten__img__poke {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
 .img-pokemon {
-	transform: translateY(-50px);
-	margin-left: 40%;
-	padding-top: 20px;
-	margin-top: 50px;
+	/* transform: translateY(-20px); */
+	margin-bottom: 10px;
+	width: 200px;
+	height: 200px;
 }
 
 .img-pokemon-info {
@@ -342,10 +349,6 @@
 }
 
 @media screen and (min-width: 800px) {
-	.form {
-		width: 520px;
-	}
-
 	.pokemon-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

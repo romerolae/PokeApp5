@@ -80,7 +80,9 @@ const PokemonDetails = () => {
 	return (
 		<div className="content">
 			<div className="pokemon-content-detail">
-				<img className="img-pokemon" src={detail.imageBig} alt="" />
+				<div className="conten__img__poke">
+					<img className="img-pokemon" src={detail.imageBig} alt="" />
+				</div>
 				<div className="img-pokemon-info">
 					<h4>Heigth : {detail.height}</h4>
 					<h2>Detail {detail.id}</h2>
